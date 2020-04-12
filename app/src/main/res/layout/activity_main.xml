@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/Hello_string"
         android:textSize="35sp"
         android:textColor="@color/textColor"
         android:background="@color/backColor"
