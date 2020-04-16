@@ -3,10 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Hello_string"
@@ -17,5 +19,39 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <Button
+        android:id="@+id/startbotton"
+        android:onClick="mytoast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    </Button>
+<Button
+    android:id="@+id/stopBotton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Stop"
+    android:textColor="@color/colorPrimary"
+    app:layout_constraintTop_toBottomOf="@id/textView"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@+id/startbotton"
+    app:layout_constraintBottom_toBottomOf="parent">
+</Button>
+    <Button
+        android:id="@+id/clearbotton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:onClick="countMe"
+        android:text="Clear"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/startbotton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+    </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
